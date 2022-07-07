@@ -1,3 +1,8 @@
+
+# check if len a is same as  len b 
+# check if the diff elem is exactly 2 
+# if diff is 0 , check for duplicate ( len(set(a)) < len(a) )
+
 class Solution:
     def buddyStrings(self, s: str, goal: str) -> bool:
         
