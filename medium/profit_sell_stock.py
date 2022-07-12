@@ -8,10 +8,11 @@ class Solution:
         n = len(prices) - 1
         
         while i < n : 
+	# find the immeediate minimum
             while i < n and prices[i+1] <= prices[i]:
                 i += 1
             buy = prices[i]
-            
+            # find the immeidate maximum
             while i < n and prices[i+1] > prices[i]:
                 i += 1
             sell = prices[i]
@@ -23,7 +24,7 @@ class Solution:
     
     """
     brief summary : we buy when the prices are down and sell them immediately next to the highest price 
-    
+			    
     A + B > C 
     
     
